@@ -12,6 +12,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-color: #efefef;
     
 }
 
@@ -20,7 +21,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 300px;
+    height: 400px;
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: rgba(178, 178, 178, 0.683);
 }
 
 label {
@@ -35,11 +40,31 @@ input {
 }
 
 button {
-    padding: 0.3rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: rgba(6, 255, 6, 0.548);
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(1, 187, 1, 0.818);
 }
 
 span {
     border: solid black 1px;
     padding: 0.4rem;
     display: none;
+    margin-top: 1rem;
+}
+
+.showmsm {
+    display: block;
+    background-color: rgba(14, 255, 14, 0.483);
+}
+
+.showmsm__error {
+    display: block;
+    background-color: rgba(255, 0, 0, 0.654);
+    color: rgb(231, 231, 231);
 }
