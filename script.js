@@ -1,23 +1,33 @@
-const form = document.querySelector("#form")
+$(document).ready(() => {
+    $("#botao-nova-tarefa").click(() => {
+        $("#form").slideDown();
+    })
 
+    $("#botao-cancelar").click(() => {
+        $("#form").slideUp()
+    })
 
-function compararNumeros() {
-    const campoA = parseFloat(document.querySelector("#input__campoA").value)
-    const campoB = parseFloat(document.querySelector("#input__campoB").value) 
-    const msm = document.querySelector("#menssagem")
+    
+    $("#form").on("submit", (e) => {
+        e.preventDefault()
+        const novaTarefa = $("#input-nova-tarefa").val()
+        
+        if (novaTarefa === "") {
+            alert("O campo de adicionar a tarefa não pode estar vazio")
+            
+        } else {
+            const novoItem = $("<li id='tarefa-lista'></li>")
+            $(`<h3 id='tarefa'>${novaTarefa}</h3>`).appendTo(novoItem)
+            $(novoItem).appendTo("ul")
+            $("#input-nova-tarefa").val("")
+            
+        }
+        
+        
+    })
+    
+    $("ul").on("click", "li", function() {
+        $(this).toggleClass("tarefa-feita")
+    })
 
-    if (campoA < campoB) {
-        msm.classList.remove("showmsm__error")
-        msm.classList.add("showmsm")
-        msm.textContent = "O campo B é maior que o Campo A, muito bem!"
-    } else {
-        msm.classList.remove("showmsm")
-        msm.classList.add("showmsm__error")
-        msm.textContent = "O campo B deve ser maior maior que o campo A"
-    }
-}
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    compararNumeros()
 })

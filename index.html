@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pr-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form class="form" id="form">
-        <div>
-            <label id="title__campoA" for="">Campo A: </label>
-            <input id="input__campoA" type="number">
-        </div>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <button id="botao-nova-tarefa">Nova Tarefa +</button>
+    </header>
 
-        <div>
-            <label id="title__campoB" for="">Campo B: </label>
-            <input id="input__campoB" type="number">
-        </div>
-
-        <button type="submit" id="btn">Calcular</button>
+    <form id="form">
+        <h2>
+            Inserir nova tarefa
+        </h2>
+        <input type="text" id="input-nova-tarefa">
+        <button id="botao-adicionar">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
     </form>
-    <span id="menssagem">O campo B é maior que o Campo A, muito bem!</span>
 
+    <div class="container">
+        <ul>
+
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
 
 </body>

@@ -2,69 +2,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 
 }
 
-body {
+header {
+    background-color: aqua;
+    padding: 16px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #efefef;
-    
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 400px;
-    width: 400px;
-    border: 5px solid black;
-    border-radius: 20px;
-    background-color: rgba(178, 178, 178, 0.683);
-}
-
-label {
-    display: block;
-    padding-bottom: 1rem;
+    border-bottom: 16px solid rgb(0, 180, 180);
+    text-transform: uppercase;
 
 }
 
-input {
-    padding: 0.2rem;
+header button {
+    margin-left: 16px;
+
+}
+
+form {
+    background-color: rgb(0, 150, 150);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+
+}
+
+form h2 {
+    margin-bottom: 16px;
+
+}
+
+input,
+button {
+    padding: 8px;
 
 }
 
 button {
-    padding: 0.5rem;
+    background-color: #009432;
     border: none;
-    background-color: rgba(6, 255, 6, 0.548);
-
-}
-
-button:hover {
     cursor: pointer;
-    background-color: rgba(1, 187, 1, 0.818);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+
 }
 
-span {
-    border: solid black 1px;
-    padding: 0.4rem;
-    display: none;
-    margin-top: 1rem;
+#botao-cancelar {
+    background-color: red;
 }
 
-.showmsm {
-    display: block;
-    background-color: rgba(14, 255, 14, 0.483);
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 24px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #faebd7;
+    
 }
 
-.showmsm__error {
-    display: block;
-    background-color: rgba(255, 0, 0, 0.654);
-    color: rgb(231, 231, 231);
+
+ul {
+    margin-top: 16px;
+    list-style: none;
+}
+
+ul li {
+    margin: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.402);
+    
+}
+
+.tarefa-feita {
+    text-decoration: line-through;
 }
