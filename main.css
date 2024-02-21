@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ccc;
+}
+
+#contato {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 30px;
+
+
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+.form-campo {
+    margin-bottom: 16px;
+
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+
+}
+
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 8px;
+
+}
+
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    font-size: 18px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+form button {
+    max-width: 120px;
+}
+
+.error {
+    color: red;
+}
