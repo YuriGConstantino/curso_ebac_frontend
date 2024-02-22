@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+
+header div {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgb(40, 176, 254);
+    margin-bottom: 3rem;
+}
+
+header ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    margin: 2rem 0;
+    border-bottom: 2px solid rgb(0, 126, 224);
+    padding-bottom: 1rem;
+    font-style: italic;
+    font-size: 2rem;
+    color: rgb(0, 126, 224);
+    
+}
+
+.sobre {
+    margin-bottom: 5rem;
+}
+
+.sobre img {
+    width: 100%;
+
+}
+
+.sobre p {
+    font-size: 1.5rem;
+}
+
+.produtos {
+    margin-bottom: 2rem;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.produto p {
+    font-size: 1rem;
+    margin: 1rem 0;
+
+}
+
+.produto button {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    background-color: rgb(153, 255, 0);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    header div {
+        display: flex;
+        align-items: center;
+    }
+
+    header ul li {
+        display: inline;
+        margin: 0 1rem;
+
+    }
+
+    .produtos > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .produto {
+        width: 45%;
+        margin: 1rem 2.5%;
+    }
+
+    .produto button {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    header div {
+        display: flex;
+        align-items: center;
+    }
+
+    header ul li {
+        display: inline;
+        margin: 0 1rem;
+
+    }
+
+    .sobre {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sobre img {
+        height: 40%;
+        width: 40%;
+        margin-right: 2rem;
+    }
+
+    .sobre p {
+        font-size: 1rem;
+    }
+
+    .produtos > div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .produto {
+        width: 24%;
+        padding: 1rem;
+    }
+
+    .produto h3 {
+        font-size: 1rem;
+    }
+
+    .produto p {
+        font-size: 0.8rem;
+    }
+
+    .produto button {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+
+}
