@@ -4,7 +4,7 @@ IMPORTANTE:
 
 1- instalar dependencias - npm i
 
-2- rodar o gulp - npm run gulp
+2- rodar o gulp para compilar os arquivos - npm run gulp
 
 
 Neste exercício você deve:
