@@ -1,6 +1,7 @@
 # curso_ebac_frontend
 
 IMPORTANTE:
+
 1- instalar dependencias - npm i
 
 2- rodar o gulp - npm run gulp
