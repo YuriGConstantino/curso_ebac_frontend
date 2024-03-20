@@ -1,5 +1,10 @@
 # curso_ebac_frontend
 
+OBS: 
+1- instalar as dependencias - npm i;
+2- executar npm run grunt build para compilar os arquivos
+
+
 Neste exercício você deverá:
 
 1) Criar um arquivo Gruntfile;
