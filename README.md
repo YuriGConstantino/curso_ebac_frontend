@@ -2,6 +2,7 @@
 
 OBS: 
 1- instalar as dependencias - npm i;
+
 2- executar npm run grunt build para compilar os arquivos
 
 
