@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const Perfilfollowing = json.following
 
                 $('#avatar').attr('src', Perfilavatar)
-                $('#username').text(Perfilname)
-                $('#name').text(Perfilusename)
+                $('#username').text(Perfilusename)
+                $('#name').text(Perfilname)
                 $('#repositoriesNumber').text(Perfilrepositories)
                 $('#followersNumber').text(Perfilfollowers)
                 $('#followingNumber').text(Perfilfollowing)
