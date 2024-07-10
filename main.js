@@ -18,11 +18,12 @@ function Produto(nome, marca, tipo, preco) {
     this.promocao = (valor) => {
         const novaPromocao = parseFloat(_preco - (_preco * valor)).toFixed(2)
 
-        console.log(`Novo preço com a Promoção do ${this.nome}, ${this.marca}: ${novaPromocao}`)
+        console.log(`Novo preço com a Promoção do ${this.nome}, ${this.marca}: R$: ${novaPromocao}`)
     }
 
 }
 
+//add novo produto
 const arroz = new Produto("Arroz", "Tio João", "Não Perecível", 39.99)
 const feijao = new Produto("Feijão", "Camil", "Não Perecível", 7.99)
 const melancia = new Produto("Melancia", "Magali", "Fruta", 20.99)
