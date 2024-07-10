@@ -25,7 +25,7 @@ function Produto(nome, marca, tipo, preco) {
 
 const arroz = new Produto("Arroz", "Tio João", "Não Perecível", 39.99)
 const feijao = new Produto("Feijão", "Camil", "Não Perecível", 7.99)
-const melancia = new Produto("Melancia", "", "Fruta", 20.99)
+const melancia = new Produto("Melancia", "Magali", "Fruta", 20.99)
 const hamburguer = new Produto("Hambúrguer", "Sadia", "Congelados", 14.99)
 
 console.log(arroz)
