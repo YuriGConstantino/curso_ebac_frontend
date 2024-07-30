@@ -8,7 +8,7 @@ const multiplica = multiplicacao(base, altura)
 
 console.log(multiplica)
 
-function saudacao(nome: string) {
+function saudacao(nome: string): string {
     return `Ola ${nome}`
 }
 
